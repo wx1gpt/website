@@ -1,3 +1,4 @@
+import { GoImportProvider } from '@/components/goimport'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -16,7 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta name="go-import" content="wxgpt.io mod github.com/wx1gpt" />
       <body className={inter.className}>{children}</body>
     </html>
   )
