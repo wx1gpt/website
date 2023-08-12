@@ -21,7 +21,7 @@ export function generateMetadata(
     }
 }
 
-export default function Page({ params }) {
+export default function Page({ params }: any) {
     const { pkgname } = params;
     // eslint-disable-next-line react/no-unescaped-entities
     return <div>import "wxgpt.io/pkg/{pkgname}"</div>
